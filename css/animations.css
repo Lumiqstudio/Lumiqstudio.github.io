@@ -1,0 +1,178 @@
+/*==================================================
+                ANIMATIONS
+                LUMIQ STUDIO
+==================================================*/
+
+
+/*======================================
+        VARIABLES
+======================================*/
+
+:root{
+
+    --animation-fast:.25s;
+
+    --animation-normal:.45s;
+
+    --animation-slow:.8s;
+
+}
+
+/*======================================
+            FADE UP
+======================================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+
+        opacity var(--animation-slow),
+
+        transform var(--animation-slow);
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*======================================
+            FADE LEFT
+======================================*/
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-70px);
+
+    transition:all .8s;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/*======================================
+            FADE RIGHT
+======================================*/
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(70px);
+
+    transition:all .8s;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/*======================================
+            ZOOM
+======================================*/
+
+.zoom{
+
+    opacity:0;
+
+    transform:scale(.85);
+
+    transition:.8s;
+
+}
+
+.zoom.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/*======================================
+            ROTATE
+======================================*/
+
+.rotate{
+
+    opacity:0;
+
+    transform:
+
+        rotate(-8deg)
+
+        scale(.9);
+
+    transition:.8s;
+
+}
+
+.rotate.show{
+
+    opacity:1;
+
+    transform:
+
+        rotate(0)
+
+        scale(1);
+
+}
+
+.delay-1{
+
+    transition-delay:.1s;
+
+}
+
+.delay-2{
+
+    transition-delay:.2s;
+
+}
+
+.delay-3{
+
+    transition-delay:.3s;
+
+}
+
+.delay-4{
+
+    transition-delay:.4s;
+
+}
+
+.delay-5{
+
+    transition-delay:.5s;
+
+}
+
+.delay-6{
+
+    transition-delay:.6s;
+
+}
+

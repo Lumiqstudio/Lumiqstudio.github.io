@@ -1,0 +1,290 @@
+/*==================================================
+                    RESET
+                LUMIQ STUDIO
+==================================================*/
+
+/*==============================
+        RESET GENERAL
+==============================*/
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/*==============================
+        HTML
+==============================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+    font-size:16px;
+
+}
+
+/*==============================
+        BODY
+==============================*/
+
+body{
+
+    font-family:var(--font-body);
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+/*==============================
+        IMÁGENES
+==============================*/
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/*==============================
+        ENLACES
+==============================*/
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/*==============================
+        LISTAS
+==============================*/
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/*==============================
+        BOTONES
+==============================*/
+
+button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+}
+
+/*==============================
+        INPUTS
+==============================*/
+
+input,
+textarea,
+select{
+
+    font:inherit;
+
+    outline:none;
+
+    border:none;
+
+    background:none;
+
+}
+
+/*==============================
+        TEXTAREA
+==============================*/
+
+textarea{
+
+    resize:vertical;
+
+}
+
+/*==============================
+        TABLAS
+==============================*/
+
+table{
+
+    border-collapse:collapse;
+
+    border-spacing:0;
+
+}
+
+/*==============================
+        TITULOS
+==============================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--font-title);
+
+    color:var(--dark);
+
+    line-height:1.2;
+
+}
+
+/*==============================
+        PÁRRAFOS
+==============================*/
+
+p{
+
+    color:var(--text);
+
+}
+
+/*==============================
+        SECCIONES
+==============================*/
+
+section{
+
+    padding:100px 0;
+
+}
+
+/*==============================
+        CONTENEDOR
+==============================*/
+
+.container{
+
+    width:min(92%, var(--container));
+
+    margin:auto;
+
+}
+
+/*==============================
+        UTILIDADES
+==============================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+/*==============================
+        SELECCIÓN
+==============================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/*==============================
+        SCROLLBAR
+==============================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--background);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-light);
+
+}
+
+/*==============================
+        FOCUS
+==============================*/
+
+:focus-visible{
+
+    outline:3px solid var(--primary-soft);
+
+    outline-offset:4px;
+
+}
+
+/*==============================
+        TRANSICIONES
+==============================*/
+
+a,
+button,
+input,
+textarea,
+select{
+
+    transition:all var(--transition);
+
+}

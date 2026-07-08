@@ -1,0 +1,1680 @@
+/*==================================================
+                    HERO
+                LUMIQ STUDIO
+==================================================*/
+
+
+
+/*========================================
+                HERO
+========================================*/
+
+.hero{
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: calc(100vh - 90px);
+
+    padding: 120px 0 80px;
+
+    background: var(--background);
+
+}
+
+
+
+/*======================================
+        HERO BACKGROUND
+======================================*/
+
+.hero-background{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+}
+
+
+
+.hero-bg-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(70px);
+
+    opacity:.25;
+
+}
+
+
+
+.circle-1{
+
+    width:500px;
+
+    height:500px;
+
+    background:var(--primary-soft);
+
+    top:-180px;
+
+    left:-180px;
+
+}
+
+
+
+.circle-2{
+
+    width:450px;
+
+    height:450px;
+
+    background:var(--secondary);
+
+    right:-120px;
+
+    top:100px;
+
+}
+
+
+
+.circle-3{
+
+    width:350px;
+
+    height:350px;
+
+    background:var(--primary-light);
+
+    bottom:-120px;
+
+    left:45%;
+
+}
+
+
+
+/*======================================
+        HERO CONTAINER
+======================================*/
+
+.hero-container{
+
+    display:grid;
+
+    grid-template-columns:
+
+        minmax(0,1fr)
+
+        minmax(0,1fr);
+
+    align-items:center;
+
+    gap:64px;
+
+}
+
+
+/*======================================
+            HERO LEFT
+======================================*/
+
+.hero-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+
+
+.hero-title{
+
+    font-size:clamp(2.8rem,5vw,4.8rem);
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    color:var(--dark);
+
+}
+
+
+
+.hero-title span{
+
+    color:var(--primary);
+
+}
+
+
+
+.hero-description{
+
+    max-width:580px;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    color:var(--text);
+
+}
+
+
+
+.hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.hero-stats{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:12px;
+
+}
+
+/*======================================
+            STAT CARD
+======================================*/
+
+.stat-card{
+
+    min-width:130px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:var(--white);
+
+    box-shadow:var(--shadow-sm);
+
+    text-align:center;
+
+}
+
+
+
+/*======================================
+            HERO BADGE
+======================================*/
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:fit-content;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(34,197,94,.12);
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+
+
+/*======================================
+            HERO SCENE
+======================================*/
+
+.hero-scene{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:750px;
+
+}
+
+/*==================================================
+                HERO GLOW
+==================================================*/
+
+.hero-glow{
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    background:rgba(34,197,94,.25);
+
+    z-index:1;
+
+}
+
+
+
+/*==================================================
+                HERO LAPTOP
+==================================================*/
+
+.hero-laptop{
+
+    position:relative;
+
+    z-index:4;
+
+    width:min(100%,650px);
+
+}
+
+.hero-laptop img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+
+/*==================================================
+                HERO SCREEN
+==================================================*/
+
+.hero-screen{
+
+    width:100%;
+
+    height:370px;
+
+    background:#ffffff;
+
+    border:10px solid #1f2937;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-xl);
+
+    position:relative;
+
+}
+
+
+
+/* Cámara */
+
+.hero-screen::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#111827;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:12px;
+
+}
+
+
+
+/*==================================================
+            SCREEN HEADER
+==================================================*/
+
+.screen-header{
+
+    height:42px;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 18px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+
+
+.window-buttons{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+
+
+.window-buttons span{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+
+
+.window-buttons .red{
+
+    background:#ff5f57;
+
+}
+
+
+
+.window-buttons .yellow{
+
+    background:#febc2e;
+
+}
+
+
+
+.window-buttons .green{
+
+    background:#28c840;
+
+}
+
+
+
+.screen-title{
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    color:#6b7280;
+
+}
+
+/*==================================================
+                SCREEN BODY
+==================================================*/
+
+.screen-body{
+
+    padding:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+
+
+/*==================================================
+                HERO BASE
+==================================================*/
+
+.hero-base{
+
+    width:640px;
+
+    height:18px;
+
+    background:linear-gradient(
+
+        to bottom,
+
+        #d1d5db,
+
+        #9ca3af
+
+    );
+
+    border-radius:0 0 18px 18px;
+
+    margin-top:-4px;
+
+    position:relative;
+
+}
+
+
+
+/* Soporte */
+
+.hero-base::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:8px;
+
+    background:#9ca3af;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:5px;
+
+    border-radius:999px;
+
+}
+
+
+
+/*==================================================
+                HOVER
+==================================================*/
+
+.hero-laptop:hover{
+
+    transform:
+
+        translateY(-8px)
+
+        scale(1.02);
+
+}
+
+/*==================================================
+                MINI LANDING
+==================================================*/
+
+.mini-navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.mini-logo{
+
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+
+
+.mini-menu{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+
+
+.mini-menu span{
+
+    width:42px;
+
+    height:6px;
+
+    border-radius:999px;
+
+    background:#d1d5db;
+
+}
+
+
+
+/*==================================================
+                MINI HERO
+==================================================*/
+
+.mini-hero{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    margin-top:12px;
+
+}
+
+
+
+.mini-title{
+
+    width:72%;
+
+    height:16px;
+
+    background:var(--primary);
+
+    border-radius:999px;
+
+}
+
+
+
+.mini-subtitle{
+
+    width:92%;
+
+    height:10px;
+
+    background:#d1d5db;
+
+    border-radius:999px;
+
+}
+
+
+
+.mini-text{
+
+    width:80%;
+
+    height:10px;
+
+    background:#e5e7eb;
+
+    border-radius:999px;
+
+}
+
+
+
+.mini-button{
+
+    width:150px;
+
+    height:42px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    margin-top:10px;
+
+}
+
+/*==================================================
+                MINI CARDS
+==================================================*/
+
+.mini-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+
+    margin-top:28px;
+
+}
+
+
+
+.mini-card{
+
+    background:#f9fafb;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:16px;
+
+    padding:16px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+
+.mini-card-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    background:rgba(46,125,50,.15);
+
+}
+
+
+
+.mini-card-title{
+
+    width:90%;
+
+    height:10px;
+
+    background:#9ca3af;
+
+    border-radius:999px;
+
+}
+
+
+
+.mini-card-text{
+
+    width:100%;
+
+    height:8px;
+
+    background:#d1d5db;
+
+    border-radius:999px;
+
+}
+
+
+
+.mini-card-text.small{
+
+    width:72%;
+
+}
+
+/*==================================================
+                ANIMACIONES
+==================================================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+
+
+.hero-laptop{
+
+    animation:floating 6s ease-in-out infinite;
+
+}
+
+
+
+@keyframes pulseGlow{
+
+    0%{
+
+        opacity:.25;
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        opacity:.45;
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        opacity:.25;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+.hero-glow{
+
+    animation:pulseGlow 5s ease-in-out infinite;
+
+}
+
+.floating-icons{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:5;
+
+}
+
+/*==================================================
+                TECH WRAPPERS
+==================================================*/
+
+.tech-wrapper{
+
+    position:absolute;
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:20px;
+
+    background:white;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.tech-wrapper:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/*======================================
+            POSICIONES
+======================================*/
+
+.tech-html{
+
+    top:30px;
+
+    left:-40px;
+
+}
+
+.tech-css{
+
+    top:170px;
+
+    right:-70px;
+
+}
+
+.tech-js{
+
+    bottom:150px;
+
+    left:-80px;
+
+}
+
+.tech-php{
+
+    bottom:35px;
+
+    right:-50px;
+
+}
+
+.tech-node{
+
+    top:-30px;
+
+    right:90px;
+
+}
+
+/*==================================================
+                TECH CARD
+==================================================*/
+
+.tech-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    min-width:210px;
+
+    padding:16px 20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.6);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.tech-icon{
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:16px;
+
+    font-size:1.8rem;
+
+    color:#fff;
+
+}
+
+.tech-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.tech-content h4{
+
+    font-size:1rem;
+
+    margin:0;
+
+}
+
+.tech-content p{
+
+    font-size:.85rem;
+
+    color:var(--text-light);
+
+}
+
+/*==================================================
+            TECH COLORS
+==================================================*/
+
+.tech-html .tech-icon{
+
+    background:#E34F26;
+
+}
+
+.tech-css .tech-icon{
+
+    background:#1572B6;
+
+}
+
+.tech-js .tech-icon{
+
+    background:#F7DF1E;
+
+    color:#111;
+
+}
+
+.tech-php .tech-icon{
+
+    background:#777BB4;
+
+}
+
+.tech-node .tech-icon{
+
+    background:#339933;
+
+}
+
+/*==================================================
+                INFO CARDS
+==================================================*/
+
+.info-card{
+
+    position:absolute;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    width:240px;
+
+    padding:18px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.info-icon{
+
+    width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:rgba(46,125,50,.12);
+
+    color:var(--primary);
+
+    font-size:1.2rem;
+
+}
+
+.info-content h4{
+
+    font-size:1rem;
+
+    margin-bottom:4px;
+
+}
+
+.info-content p{
+
+    font-size:.82rem;
+
+    color:var(--text-light);
+
+}
+
+/*==================================================
+            INFO POSITIONS
+==================================================*/
+
+.responsive{
+
+    top:80px;
+
+    right:-180px;
+
+}
+
+.speed{
+
+    bottom:240px;
+
+    left:-190px;
+
+}
+
+.seo{
+
+    bottom:90px;
+
+    right:-180px;
+
+}
+
+.security{
+
+    top:260px;
+
+    left:-200px;
+
+}
+
+/*==================================================
+                HERO RESPONSIVE
+==================================================*/
+
+
+/*======================================
+            DESKTOP
+======================================*/
+
+@media (max-width:1200px){
+
+    .hero-container{
+
+        gap:60px;
+
+    }
+
+    .hero-laptop{
+
+        width:500px;
+
+    }
+
+    .hero-base{
+
+        width:550px;
+
+    }
+
+    .tech-card{
+
+        min-width:180px;
+
+    }
+
+}
+
+
+/*======================================
+            LAPTOP
+======================================*/
+
+@media (max-width:992px){
+
+    .hero{
+
+        padding-top:100px;
+
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:70px;
+
+    }
+
+    .hero-left{
+
+        align-items:center;
+
+    }
+
+    .hero-description{
+
+        max-width:650px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-stats{
+
+        justify-content:center;
+
+    }
+
+}
+
+/*======================================
+            TABLET
+======================================*/
+
+@media (max-width:768px){
+
+    .hero{
+
+        min-height:auto;
+
+        padding-bottom:80px;
+
+    }
+
+    .hero-title{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero-scene{
+
+        min-height:620px;
+
+    }
+
+    .hero-laptop{
+
+        width:420px;
+
+    }
+
+    .hero-screen{
+
+        height:300px;
+
+    }
+
+    .hero-base{
+
+        width:470px;
+
+    }
+
+    .tech-card{
+
+        min-width:150px;
+
+        padding:14px;
+
+    }
+
+    .tech-icon{
+
+        width:46px;
+
+        height:46px;
+
+        font-size:1.4rem;
+
+    }
+
+    .info-card{
+
+        width:200px;
+
+        padding:14px;
+
+    }
+
+}
+
+/*======================================
+            MOBILE
+======================================*/
+
+@media (max-width:576px){
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+    .hero-title{
+
+        font-size:2.2rem;
+
+    }
+
+    .hero-description{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+    }
+
+    .hero-stats{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        width:100%;
+
+    }
+
+    .stat-card{
+
+        width:100%;
+
+        max-width:260px;
+
+    }
+
+    .hero-scene{
+
+        min-height:500px;
+
+    }
+
+    .hero-laptop{
+
+        width:100%;
+
+        max-width:340px;
+
+    }
+
+    .hero-screen{
+
+        height:240px;
+
+        border-width:8px;
+
+    }
+
+    .hero-base{
+
+        width:105%;
+
+        max-width:360px;
+
+    }
+
+    .screen-body{
+
+        padding:16px;
+
+        gap:16px;
+
+    }
+
+    .mini-cards{
+
+        gap:10px;
+
+    }
+
+    .mini-card{
+
+        padding:10px;
+
+    }
+
+}
+
+/*======================================
+        TECH & INFO RESPONSIVE
+======================================*/
+
+@media (max-width:992px){
+
+    .tech-wrapper{
+
+        transform:scale(.85);
+
+    }
+
+    .info-card{
+
+        transform:scale(.9);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .tech-html{
+
+        top:10px;
+
+        left:-15px;
+
+    }
+
+    .tech-css{
+
+        top:120px;
+
+        right:-20px;
+
+    }
+
+    .tech-js{
+
+        bottom:90px;
+
+        left:-25px;
+
+    }
+
+    .tech-php{
+
+        bottom:15px;
+
+        right:-20px;
+
+    }
+
+    .tech-node{
+
+        top:-10px;
+
+        right:40px;
+
+    }
+
+    .responsive{
+
+        right:-60px;
+
+        top:40px;
+
+    }
+
+    .speed{
+
+        left:-70px;
+
+        bottom:160px;
+
+    }
+
+    .seo{
+
+        right:-60px;
+
+        bottom:40px;
+
+    }
+
+    .security{
+
+        left:-70px;
+
+        top:180px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .tech-wrapper{
+
+        transform:scale(.7);
+
+    }
+
+    .info-card{
+
+        display:none;
+
+    }
+
+}
+
+/*========================================
+        FLOATING ICONS POSITION
+========================================*/
+
+/* HTML */
+
+.tech-wrapper.html{
+
+    top:8%;
+    left:8%;
+
+}
+
+/* CSS */
+
+.tech-wrapper.css{
+
+    top:20%;
+    right:5%;
+
+}
+
+/* JavaScript */
+
+.tech-wrapper.js{
+
+    top:58%;
+    left:2%;
+
+}
+
+/* PHP */
+
+.tech-wrapper.php{
+
+    bottom:12%;
+    right:12%;
+
+}
+
+/* Database */
+
+.tech-wrapper.database{
+
+    top:72%;
+    left:38%;
+
+}
+
+/* Server */
+
+.tech-wrapper.server{
+
+    top:8%;
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.tech-wrapper:nth-child(1){
+
+    animation-delay:0s;
+
+}
+
+.tech-wrapper:nth-child(2){
+
+    animation-delay:.7s;
+
+}
+
+.tech-wrapper:nth-child(3){
+
+    animation-delay:1.3s;
+
+}
+
+.tech-wrapper:nth-child(4){
+
+    animation-delay:1.8s;
+
+}
+
+.tech-wrapper:nth-child(5){
+
+    animation-delay:2.5s;
+
+}
+
+.tech-wrapper:nth-child(6){
+
+    animation-delay:3.2s;
+
+}
+
+.tech-wrapper.html i{
+
+    color:#E34F26;
+
+}
+
+.tech-wrapper.css i{
+
+    color:#1572B6;
+
+}
+
+.tech-wrapper.js i{
+
+    color:#F7DF1E;
+
+}
+
+.tech-wrapper.php i{
+
+    color:#777BB4;
+
+}
+
+.tech-wrapper.database i{
+
+    color:#22C55E;
+
+}
+
+.tech-wrapper.server i{
+
+    color:#6B7280;
+
+}
+
+.tech-wrapper{
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease;
+
+}
+
+.tech-wrapper:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+}
